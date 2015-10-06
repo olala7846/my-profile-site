@@ -1,0 +1,16 @@
+# Created by olala7846@gmail.com 2015/10/15
+# Simple flask website
+
+application: hsincheng-chao
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+
+- url: .*
+  script: main.app
+
+libraries:
+# default no GAE library required
