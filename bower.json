@@ -1,0 +1,23 @@
+{
+  "name": "hsincheng_GAE_protfolio",
+  "version": "0.0.0",
+  "homepage": "https://github.com/olala7846/my-profile-site",
+  "authors": [
+    "hsincheng Chao <olala7846@gmail.com>"
+  ],
+  "description": "olala's protfolio",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "polymer": "Polymer/polymer#~1.1.4"
+  }
+}
