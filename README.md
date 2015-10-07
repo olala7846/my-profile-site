@@ -16,8 +16,8 @@ Simple GAE site, try whatever web tech I want here!
 * Init bower.json: `bower init`
 * Install bower package: `bower install --save jquery`
 
-#### Polymer
-* `bower install --save polymer`
+#### Materialize
+* `bower install --save materialize`
 
 
 
