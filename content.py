@@ -31,7 +31,10 @@ index_content = {
             'icon': 'filter_drama',
             'detail': """
                Voting system<br>
-               - Developed frontend + backend for <a href="http://ntuvb-allstar.appspot.com/index">NTU all-start volleyball game</a> with Google App Engine.
+               - Frontend and backend developer for <a href="http://ntuvb-allstar.appspot.com/index">NTU all-start volleyball game</a> with Google App Engine, voted by 2000+ unique students.<br>
+               My protfolio:<br>
+               - Of course I develop this page myself <img src="/static/img/1f60f.png" class="text-height"> the source code is on <a href="https://github.com/olala7846/my-profile-site">github</a>!
+
             """
         },
         {
