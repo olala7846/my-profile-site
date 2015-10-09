@@ -1,9 +1,6 @@
 .text-height {
     height: 1em;
 }
-p {
-    font-size: 20px;
-}
 .collapsible-header .row {
     margin-bottom: 0px;
 }
@@ -35,4 +32,10 @@ p {
     left: 0;
     bottom: 0;
     right: 0;
+}
+.mid-size-text {
+    font-size: 20px;
+}
+.large-size-text {
+    font-size: 25px;
 }
