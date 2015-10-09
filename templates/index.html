@@ -20,6 +20,7 @@
     </div>
   </nav>
 
+  <!-- first parallax -->
   <div class="parallax-container">
     <div class="parallax"><img src="/static/img/bluesky2.png"></div>
     <div class="valign-wrapper matchparent">
@@ -41,16 +42,40 @@
 
         <!-- skills -->
         <h3>My Skills</h3>
+
+
         {% for name, items in content.skills %}
           <h5>{{name}}:</h5>
-          {% for item in items%}
-            <div class="chip">
-              <img src="{{item[1]}}">
-              {{item[0]}}
-            </div>
-          {% endfor %}
+          <div class=row>
+            {% for item in items%}
+              <div class="card col s6 m4 l2">
+                <div class="card-image waves-effect waves-block waves-light crop-image square">
+                  <div class="square-content">
+                    <img src="{{item[1]}}" class="activator">
+                  </div>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                  <p>{{item[0]}}</p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
         {% endfor %}
 
+      </div>
+    </div>
+  </div>
+
+  <!-- second parallax -->
+  <div class="parallax-container">
+      <div class="parallax"><img src="/static/img/cloudfall.jpg"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col l8 m10 s12 offset-l2 offset-m1">
         <!-- experience -->
         <h3>Experiences</h3>
 

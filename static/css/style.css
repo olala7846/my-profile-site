@@ -14,3 +14,25 @@ p {
 .fit-parent-w {
     width: 100%;
 }
+.parallax-container {
+    height: 400px;
+}
+.card-content p {
+    font-size: 15px;
+}
+.square{
+    position: relative;
+    width: 100%
+}
+.square:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.square-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
