@@ -27,45 +27,67 @@
   <div class="container">
     <div class="row">
       <div class="col s8 offset-s2">
-        <br>
+
+        <!-- about me -->
         <h1><img src="/static/img/handraised.png" class="text-height"> I'm Hsin-Cheng</h2>
         <h3>About me:</h3>
         <p>
-            I'm a newbie full-stack web developer from Taiwan, currently in progress with my
+            I'm a newbie full-stack web developer from Taiwan, currently undergoing my
           full-stack development nanodegree at <a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004">Udacity</a>.
-          before that I was an iOS + Backend engineer at <a href="https://livehouse.in/">LIVEhouse.in</a>.
-          My favoriate programming language is <img src="/static/img/python-logo.png" class="text-height">Python
-          and my favoriate web platformis <a href="https://cloud.google.com/appengine/"><img src="/static/img/gaelogo.png" class="text-height">App Engine</a>.
+          before that I was an iOS + Backend engineer at <a href="https://livehouse.in/">LIVEhouse.in</a>.<br>
+            My favoriate programming language is <img src="/static/img/python-logo.png" class="text-height">Python
+          and my favoriate web platform is <a href="https://cloud.google.com/appengine/"><img src="/static/img/gaelogo.png" class="text-height">Google App Engine</a>.
           I will finish my course soon, wish we luck!
         </p>
 
+        <!-- skills -->
         <h3>My Skills</h3>
-        <table class="striped">
-          <thead>
-            <th>Language/Framework</th>
-            <th>Experience</th>
-            <th>Since</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Objective-C</td>
-              <td>Expert</td>
-              <td>2013</td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td>Good</td>
-              <td>2011</td>
-            </tr>
-            <tr>
-              <td>Javascript</td>
-              <td>Good</td>
-              <td>2014</td>
-            </tr>
+        <h5>Languages:</h5>
+        <div class="chip">
+          <img src="/static/img/python-logo.png" alt="P">
+          Python
+        </div>
+        <div class="chip">
+          <img src="/static/img/nodejs-logo.png" alt="N">
+          Node.js
+        </div>
+        <div class="chip">
+          <img src="/static/img/html-logo.png" alt="5">
+          HTML5
+        </div>
+        <div class="chip">
+          <img src="/static/img/objc-logo.png" alt="obj-C">
+          Objective C
+        </div>
 
-          </tbody>
-        </table>
+        <h5>Frameworks:</h5>
+        <div class="chip">
+          <img src="/static/img/gaelogo.png" alt="G">
+          Google App Engine
+        </div>
+        <div class="chip">
+          <img src="/static/img/flask.png" alt="F">
+          Flask
+        </div>
+        <div class="chip">
+          <img src="/static/img/jinja-logo.png" alt="J">
+          Jinja
+        </div>
 
+        <h5>Database:</h5>
+        <div class="chip">
+          <img src="/static/img/datastore-logo.png" alt="G">
+          Google Cloud Datastore
+        </div>
+        <div class="chip">
+          <img src="/static/img/psql-logo.png" alt="P">
+          PostgreSQL
+        </div>
+        <div class="chip">
+          <img src="/static/img/mongodb.png" alt="M">
+          MongoDB
+        </div>
+        <!-- experience -->
         <h3>Experiences</h3>
         <ul class="collapsible" data-collapsible="accordion">
           <li>
@@ -75,7 +97,12 @@
                 <div class="right-align col s4">2015 ~ now</div>
               </div>
             </div>
-            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            <div class="collapsible-body">
+              <p>
+                Voting system<br>
+                - Developed frontend + backend for <a href="http://ntuvb-allstar.appspot.com/index">NTU all-start volleyball game</a> with Google App Engine.
+              </p>
+            </div>
           </li>
           <li>
             <div class="collapsible-header">
@@ -84,7 +111,13 @@
                 <div class="right-align col s4">2012~2015</div>
               </div>
             </div>
-            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            <div class="collapsible-body">
+              <p>
+                Backend Engineer at LIVEhouse.in<br>
+                - Provides JSON api for mobile app and implements shared internal npm packages.<br>
+                - Reduced storage cost by 20%~50% using <a href="https://cloud.google.com/storage/docs/nearline?hl=en">Google nearline storage</a>.
+              </p>
+            </div>
           </li>
           <li>
             <div class="collapsible-header">
@@ -93,12 +126,13 @@
                 <div class="right-align col s4">2012~2015</div>
               </div>
             </div>
-
             <div class="collapsible-body">
-              <p>LIVEhouse.in (2012~2015)<br>
-
-              Lorem ipsum dolor sit amet.
-              </p>
+              <p>
+                iOS Developer at LIVEhouse.in<br>
+                - <a href="https://itunes.apple.com/tw/app/livehouse.in/id912290138?mt=8">App</a> engineer in a team of three. responsible for structural design and library survey. Initiated <a href="http://google.com/chromecast">Chromecast</a> support, introduced <a href="http://www.google.com/analytics/ce/nrs/tag-manager/">Google Tag Manager</a> library.<br>
+                - Built up continuous integration system with Jenkins, Gitlab Webhook, XCTest/OCMock, HockyApp API.<br>
+                - Face to face interviewd 20+ candicates.
+                </p>
             </div>
           </li>
         </ul>
