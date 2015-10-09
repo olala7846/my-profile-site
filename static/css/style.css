@@ -4,3 +4,6 @@
 p {
     font-size: 20px;
 }
+.collapsible-header .row {
+    margin-bottom: 0px;
+}

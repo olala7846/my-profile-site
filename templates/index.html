@@ -13,9 +13,9 @@
     <div class="nav-wrapper container">
       <a href="#" class="blue-text brand-logo">Under construction ...</a>
       <ul id="nav-mobile" class=" right hide-on-med-and-down">
-        <li><a href="#" class="blue-text">LinkedIn</a></li>
-        <li><a href="#" class="blue-text">Github</a></li>
-        <li><a href="#" class="blue-text">Google+</a></li>
+        <li><a href="https://tw.linkedin.com/in/hsincheng" class="blue-text">LinkedIn</a></li>
+        <li><a href="https://github.com/olala7846" class="blue-text">Github</a></li>
+        <li><a href="https://plus.google.com/u/0/+趙心成/" class="blue-text">Google+</a></li>
       </ul>
     </div>
   </nav>
@@ -29,16 +29,17 @@
       <div class="col s8 offset-s2">
         <br>
         <h1><img src="/static/img/handraised.png" class="text-height"> I'm Hsin-Cheng</h2>
-        <h2>About me:</h2>
+        <h3>About me:</h3>
         <p>
-            I'm a software developer from Taiwan, a newbie full-stack web developer.
-          I've been developing iOS for 3 years and currently eager to learn something different.
+            I'm a newbie full-stack web developer from Taiwan, currently in progress with my
+          full-stack development nanodegree at <a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004">Udacity</a>.
+          before that I was an iOS + Backend engineer at <a href="https://livehouse.in/">LIVEhouse.in</a>.
           My favoriate programming language is <img src="/static/img/python-logo.png" class="text-height">Python
-          and I'm currently studying my full-stack development nanodegree on <a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004">Udacity</a>.
+          and my favoriate web platformis <a href="https://cloud.google.com/appengine/"><img src="/static/img/gaelogo.png" class="text-height">App Engine</a>.
           I will finish my course soon, wish we luck!
         </p>
 
-        <h4>My Skills</h4>
+        <h3>My Skills</h3>
         <table class="striped">
           <thead>
             <th>Language/Framework</th>
@@ -64,6 +65,43 @@
 
           </tbody>
         </table>
+
+        <h3>Experiences</h3>
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header">
+              <div class="row">
+                <div class="col s8"><i class="material-icons">filter_drama</i>Full-stack Web Developer</div>
+                <div class="right-align col s4">2015 ~ now</div>
+              </div>
+            </div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              <div class="row">
+                <div class="col s8"><i class="material-icons">settings</i>Backend Engineer</div>
+                <div class="right-align col s4">2012~2015</div>
+              </div>
+            </div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              <div class="row">
+                <div class="col s8"><i class="material-icons">stay_primary_portrait</i>iOS Engineer</div>
+                <div class="right-align col s4">2012~2015</div>
+              </div>
+            </div>
+
+            <div class="collapsible-body">
+              <p>LIVEhouse.in (2012~2015)<br>
+
+              Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </li>
+        </ul>
         
       </div>
     </div>
@@ -75,6 +113,7 @@
   <script type="text/javascript">
     $(document).ready(function(){
       $('.parallax').parallax();
+      $('.collapsible').collapsible({accordion : false});
     });
   </script>
 </body>
