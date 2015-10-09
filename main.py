@@ -2,6 +2,7 @@
 # Entry point for my GAE
 
 from flask import Flask, request, render_template
+from content import index_content
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -12,7 +13,9 @@ app.config['DEBUG'] = True
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return render_template('index.html')
+    print "index content:"
+    print index_content
+    return render_template('index.html', content=index_content)
 
 
 @app.errorhandler(404)

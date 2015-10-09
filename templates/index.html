@@ -21,7 +21,13 @@
   </nav>
 
   <div class="parallax-container">
-    <div class="parallax"><img src="/static/img/taipei.jpg"></div>
+    <div class="parallax"><img src="/static/img/moon.jpg"></div>
+    <div class="valign-wrapper matchparent">
+      <div class="valign fit-parent-w">
+        <h1 class="center-align white-text">Never too late to start!</h1>
+        <br><br>
+      </div>
+    </div>
   </div>
 
   <div class="container">
@@ -31,112 +37,41 @@
         <!-- about me -->
         <h1><img src="/static/img/handraised.png" class="text-height"> I'm Hsin-Cheng</h2>
         <h3>About me:</h3>
-        <p>
-            I'm a newbie full-stack web developer from Taiwan, currently undergoing my
-          full-stack development nanodegree at <a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004">Udacity</a>.
-          before that I was an iOS + Backend engineer at <a href="https://livehouse.in/">LIVEhouse.in</a>.<br>
-            My favoriate programming language is <img src="/static/img/python-logo.png" class="text-height">Python
-          and my favoriate web platform is <a href="https://cloud.google.com/appengine/"><img src="/static/img/gaelogo.png" class="text-height">Google App Engine</a>.
-          I will finish my course soon, wish we luck!
-        </p>
+        <p>{{content.about|safe}}</p>
 
         <!-- skills -->
         <h3>My Skills</h3>
-        <h5>Languages:</h5>
-        <div class="chip">
-          <img src="/static/img/python-logo.png" alt="P">
-          Python
-        </div>
-        <div class="chip">
-          <img src="/static/img/nodejs-logo.png" alt="N">
-          Node.js
-        </div>
-        <div class="chip">
-          <img src="/static/img/html-logo.png" alt="5">
-          HTML5
-        </div>
-        <div class="chip">
-          <img src="/static/img/objc-logo.png" alt="obj-C">
-          Objective C
-        </div>
+        {% for name, items in content.skills %}
+          <h5>{{name}}:</h5>
+          {% for item in items%}
+            <div class="chip">
+              <img src="{{item[1]}}">
+              {{item[0]}}
+            </div>
+          {% endfor %}
+        {% endfor %}
 
-        <h5>Frameworks:</h5>
-        <div class="chip">
-          <img src="/static/img/gaelogo.png" alt="G">
-          Google App Engine
-        </div>
-        <div class="chip">
-          <img src="/static/img/flask.png" alt="F">
-          Flask
-        </div>
-        <div class="chip">
-          <img src="/static/img/jinja-logo.png" alt="J">
-          Jinja
-        </div>
-
-        <h5>Database:</h5>
-        <div class="chip">
-          <img src="/static/img/datastore-logo.png" alt="G">
-          Google Cloud Datastore
-        </div>
-        <div class="chip">
-          <img src="/static/img/psql-logo.png" alt="P">
-          PostgreSQL
-        </div>
-        <div class="chip">
-          <img src="/static/img/mongodb.png" alt="M">
-          MongoDB
-        </div>
         <!-- experience -->
         <h3>Experiences</h3>
+
         <ul class="collapsible" data-collapsible="accordion">
-          <li>
-            <div class="collapsible-header">
-              <div class="row">
-                <div class="col s8"><i class="material-icons">filter_drama</i>Full-stack Web Developer</div>
-                <div class="right-align col s4">2015 ~ now</div>
+          {% for exp in content.experiences %}
+            <li>
+              <div class="collapsible-header">
+                <div class="row">
+                  <div class="col s8">
+                    <i class="material-icons">{{exp.icon}}</i>
+                    {{exp.title}}
+                  </div>
+                  <div class="right-align col s4">{{exp.time}}</div>
+                </div>
               </div>
-            </div>
-            <div class="collapsible-body">
-              <p>
-                Voting system<br>
-                - Developed frontend + backend for <a href="http://ntuvb-allstar.appspot.com/index">NTU all-start volleyball game</a> with Google App Engine.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header">
-              <div class="row">
-                <div class="col s8"><i class="material-icons">settings</i>Backend Engineer</div>
-                <div class="right-align col s4">2012~2015</div>
+              <div class="collapsible-body">
+                <p>{{exp.detail|safe}}</p>
               </div>
-            </div>
-            <div class="collapsible-body">
-              <p>
-                Backend Engineer at LIVEhouse.in<br>
-                - Provides JSON api for mobile app and implements shared internal npm packages.<br>
-                - Reduced storage cost by 20%~50% using <a href="https://cloud.google.com/storage/docs/nearline?hl=en">Google nearline storage</a>.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header">
-              <div class="row">
-                <div class="col s8"><i class="material-icons">stay_primary_portrait</i>iOS Engineer</div>
-                <div class="right-align col s4">2012~2015</div>
-              </div>
-            </div>
-            <div class="collapsible-body">
-              <p>
-                iOS Developer at LIVEhouse.in<br>
-                - <a href="https://itunes.apple.com/tw/app/livehouse.in/id912290138?mt=8">App</a> engineer in a team of three. responsible for structural design and library survey. Initiated <a href="http://google.com/chromecast">Chromecast</a> support, introduced <a href="http://www.google.com/analytics/ce/nrs/tag-manager/">Google Tag Manager</a> library.<br>
-                - Built up continuous integration system with Jenkins, Gitlab Webhook, XCTest/OCMock, HockyApp API.<br>
-                - Face to face interviewd 20+ candicates.
-                </p>
-            </div>
-          </li>
+            </li>
+          {% endfor %}
         </ul>
-        
       </div>
     </div>
   </div>

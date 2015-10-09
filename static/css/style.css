@@ -7,3 +7,10 @@ p {
 .collapsible-header .row {
     margin-bottom: 0px;
 }
+.matchparent {
+    height: 100%;
+    width: 100%;
+}
+.fit-parent-w {
+    width: 100%;
+}
