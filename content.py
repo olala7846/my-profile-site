@@ -4,7 +4,8 @@
 
 index_content = {
     'about': """
-        I'm a newbie full-stack web developer from Taiwan, currently undergoing my full-stack development nanodegree at <a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004">Udacity</a>. before that I was an iOS + Backend engineer at <a href="https://livehouse.in/">LIVEhouse.in</a>. My favoriate programming language is <img src="/static/img/python-logo.png" class="text-height">Python and my favoriate web platform is <a href="https://cloud.google.com/appengine/"><img src="/static/img/gaelogo.png" class="text-height">Google App Engine</a>. I will finish my course soon, wish we luck!
+        I'm a newbie full-stack web developer from Taiwan, currently undergoing my full-stack development nanodegree at <a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004">Udacity</a>. before that I was an iOS + Backend engineer at <a href="https://livehouse.in/">LIVEhouse.in</a>.
+        My favorite programming language is <img src="/static/img/python-logo.png" class="text-height">Python and my favoriate web platform is <a href="https://cloud.google.com/appengine/"><img src="/static/img/gaelogo.png" class="text-height">Google App Engine</a>. I will finish my course soon, wish me luck!
     """,
     'skills': [
         ('Languages', [
@@ -32,7 +33,7 @@ index_content = {
             'detail': """
                Voting system<br>
                - Frontend and backend developer for <a href="http://ntuvb-allstar.appspot.com/index">NTU all-start volleyball game</a> with Google App Engine, voted by 2000+ unique students.<br>
-               My protfolio:<br>
+               Portfolio:<br>
                - Of course I develop this page myself <img src="/static/img/1f60f.png" class="text-height"> the source code is on <a href="https://github.com/olala7846/my-profile-site">github</a>!
 
             """
