@@ -29,9 +29,11 @@
       </div>
     </div>
   </nav>
-  <div class="container">
-    <div class="row">
 
+  <div class="container">
+
+    <div class="row">
+      <!-- Summary -->
       <div class="jumbotron col-xs-12">
         <h1>Summary</h1>
         <p>Put resume summary here</p>
@@ -40,6 +42,23 @@
             Learn more
           </a>
         </p>
+      </div>
+
+      <!-- Skills -->
+      <div class="col-md-4">
+        <div class="list-group">
+          {% for item in range(4) %}
+          <div class="list-group-item">
+            <div class="row-action-primary">
+              <i class="material-icons">folder</i>
+            </div>
+            <div class="row-content"></div>
+
+          </div>
+          <div class="list-group-separator"></div>
+
+          {% endfor %}
+        </div>
       </div>
 
       <div class="col-xs-6">
