@@ -16,6 +16,12 @@ def hello():
     return render_template('index.html', content=index_content)
 
 
+@app.route('/blog')
+def blog():
+    """Simple blog entry test page"""
+    return render_template('blog.html')
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     """Return a custom 404 error."""

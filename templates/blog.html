@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block head %}
+  <title>My blog with material bootstrap</title>
+{% endblock%}
+
+{% block body %}
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <a class="navbar-brand" href="mailto:olala7846@gmail.com">
+          <i class="material-icons">mail</i>
+          olala7846@gmail.com
+        </a>
+      </div>
+
+      <div class="navbar-collapse collapse navbar-inverse-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="">LinkedIn</a>
+          </li>
+          <li>
+            <a href="">Github</a>
+          </li>
+          <li>
+            <a href="">Google+</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+
+      <div class="jumbotron col-xs-12">
+        <h1>Summary</h1>
+        <p>Put resume summary here</p>
+        <p>
+          <a class="btn btn-primary btn-lg">
+            Learn more
+          </a>
+        </p>
+      </div>
+
+      <div class="col-xs-6">
+        <h1>Hsincheng Chao</h1>
+        <p>
+          This is my blog with material design css, still practicing
+          I'm a full-stack web developer (Python/HTML/javascript) with
+          previously iOS App development experience (Obj-C)
+        </p>
+      </div>
+      <div class="col-xs-6">
+        <div class="well">
+          <p>
+            This is a card Here maybe with button in the bottom
+          </p>
+          <p>
+            Another paragraph hahaha
+          </p>
+          <a class="btn btn-raised">
+            <i class="material-icons">file_download</i>
+            <span>Download</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-xs-4">
+        <h3>Another Paragraph</h3>
+      </div>
+      <div class="col-xs-8">
+        <p>Detail Detail Detail</p>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
+
