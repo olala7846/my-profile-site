@@ -1,0 +1,29 @@
+#summary {
+  background: url(/static/img/belly.jpg) 50% 0 fixed;
+  height: auto;
+  margin: 9 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 100px 0;
+}
+
+#skills {
+  background: url(/static/img/snail.jpg) 50% 0 fixed;
+  height: auto;
+  margin: 9 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 100px 0;
+}
+
+#contact {
+  background: url(/static/img/eye.jpg) 50% 0 fixed;
+  height: auto;
+  margin: 9 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 100px 0;
+}
