@@ -3,6 +3,7 @@
 
 from flask import Flask, request, render_template
 from content import index_content, RESUME_DATA
+import markdown as md
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -20,6 +21,12 @@ def hello():
 def blog():
     """Simple blog entry test page"""
     return render_template('blog.html', content=RESUME_DATA)
+
+
+@app.route('/markdown')
+def markdown():
+    """Test markdown"""
+    return md.markdown("```var 2+3;```")
 
 
 @app.errorhandler(404)
