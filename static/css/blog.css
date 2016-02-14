@@ -1,29 +1,44 @@
-#summary {
-  background: url(/static/img/belly.jpg) 50% 0 fixed;
-  height: auto;
-  margin: 9 auto;
-  width: 100%;
-  position: relative;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+body {
+  background-size: cover;
+  background: url(/static/img/sunset.jpg) fixed center 50%;
+}
+section {
   padding: 100px 0;
+}
+#greeting {
+  background: rgba(1, 1, 1, .4);
+  margin-top: -20px;
+}
+#summary {
+  background: white;
+}
+.summary {
+  background: white;
+}
+
+.greeting-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.greeting-content h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  color: white;
+}
+.greeting-content h1 {
+  font-size: 72px;
+  font-weight: 400;
 }
 
 #skills {
   background: url(/static/img/snail.jpg) 50% 0 fixed;
-  height: auto;
   margin: 9 auto;
   width: 100%;
   position: relative;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-  padding: 100px 0;
 }
 
 #contact {
-  background: url(/static/img/eye.jpg) 50% 0 fixed;
-  height: auto;
-  margin: 9 auto;
-  width: 100%;
-  position: relative;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-  padding: 100px 0;
+  background: rgba(1, 1, 1, .4);
 }

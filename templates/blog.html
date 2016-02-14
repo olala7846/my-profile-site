@@ -14,7 +14,7 @@
         </div>
       </div>
 
-      <div class="navbar-collapse collapse navbar-inverse-collapse">
+      <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
             <a href="">LinkedIn</a>
@@ -30,39 +30,28 @@
     </div>
   </nav>
 
-  <section id="summary" data-speed="6" data-type="background">
-    <div class="container">
-      This is the summary section
-
-    </div>
-  </section>
-
-  <section id="skills" data-speed="4" data-type="background">
-    <div class="container">
-      This is the Skill section
-    </div>
-  </section>
-
-  <section id="contact" data-speed="2" data-type="background">
-    <div class="container">
-      This is the contact section
-    </div>
-  </section>
-
-  <div class="container">
-
-    <div class="row">
-      <!-- Summary -->
-      <div class="jumbotron col-xs-12">
-        <h1>Summary</h1>
-        <p>Put resume summary here</p>
-        <p>
-          <a class="btn btn-primary btn-lg">
-            Learn more
+  <!-- Greeting -->
+  <section id="greeting" data-speed="4" data-type="background">
+    <div class="container greeting-container">
+      <div class="greeting-content">
+        <h1>HI! I'M <span style="color: teal">HSIN-CHENG</span></h1>
+        <br>
+        <h3>FULL-STACK WEB DEVELOPER IN TAIWAN</h3>
+        <br>
+        <h2>
+          <a class="btn btn-raised" href="download resume">
+            <i class="material-icons">file_download</i>
+            My Resume
           </a>
-        </p>
-      </div>
+        </h2>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- Summary -->
+  <section id="summary">
+    <div class="container summary">
       <!-- Skills -->
       <div class="col-md-4">
         <div class="list-group">
@@ -111,7 +100,93 @@
       </div>
 
     </div>
-  </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" data-speed="4" data-type="background">
+    <div class="container">
+      This is the Skill section
+      <row>
+        <!-- Summary -->
+        <div class="jumbotron col-xs-12">
+          <h1>Summary</h1>
+          <p>Put resume summary here</p>
+          <p>
+            <a class="btn btn-primary btn-lg">
+              Learn more
+            </a>
+          </p>
+        </div>
+      </row>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" data-speed="1" data-type="background">
+    <div class="container">
+
+      <div class="row">
+        <!-- Summary -->
+        <div class="jumbotron col-xs-12">
+          <h1>Summary</h1>
+          <p>Put resume summary here</p>
+          <p>
+            <a class="btn btn-primary btn-lg">
+              Learn more
+            </a>
+          </p>
+        </div>
+
+        <!-- Skills -->
+        <div class="col-md-4">
+          <div class="list-group">
+            {% for item in range(4) %}
+            <div class="list-group-item">
+              <div class="row-action-primary">
+                <i class="material-icons">folder</i>
+              </div>
+              <div class="row-content"></div>
+
+            </div>
+            <div class="list-group-separator"></div>
+
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="col-xs-6">
+          <h1>Hsincheng Chao</h1>
+          <p>
+            This is my blog with material design css, still practicing
+            I'm a full-stack web developer (Python/HTML/javascript) with
+            previously iOS App development experience (Obj-C)
+          </p>
+        </div>
+        <div class="col-xs-6">
+          <div class="well">
+            <p>
+              This is a card Here maybe with button in the bottom
+            </p>
+            <p>
+              Another paragraph hahaha
+            </p>
+            <a class="btn btn-raised">
+              <i class="material-icons">file_download</i>
+              <span>Download</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xs-4">
+          <h3>Another Paragraph</h3>
+        </div>
+        <div class="col-xs-8">
+          <p>Detail Detail Detail</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
 {% endblock %}
 
 {% block extra_script %}
