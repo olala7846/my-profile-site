@@ -1,21 +1,18 @@
 body {
   background-size: cover;
-  background: url(/static/img/sunset.jpg) fixed center 50%;
+  background: url(/static/img/sunset.jpg) fixed center;
 }
 section {
   padding: 100px 0;
 }
+
 #greeting {
-  background: rgba(1, 1, 1, .4);
+  background: rgba(0, 0, 0, 0.7);
   margin-top: -20px;
 }
 #summary {
   background: white;
 }
-.summary {
-  background: white;
-}
-
 .greeting-container {
   height: 100%;
   display: flex;
@@ -32,7 +29,7 @@ section {
 }
 
 #skills {
-  background: url(/static/img/snail.jpg) 50% 0 fixed;
+  background: url(/static/img/jam-mid.jpg) fixed center;
   margin: 9 auto;
   width: 100%;
   position: relative;

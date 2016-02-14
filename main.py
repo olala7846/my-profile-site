@@ -2,7 +2,7 @@
 # Entry point for my GAE
 
 from flask import Flask, request, render_template
-from content import index_content
+from content import index_content, RESUME_DATA
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -19,7 +19,7 @@ def hello():
 @app.route('/blog')
 def blog():
     """Simple blog entry test page"""
-    return render_template('blog.html')
+    return render_template('blog.html', content=RESUME_DATA)
 
 
 @app.errorhandler(404)

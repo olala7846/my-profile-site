@@ -61,3 +61,5 @@ index_content = {
         },
     ]
 }
+
+RESUME_DATA = index_content
