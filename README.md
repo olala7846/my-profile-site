@@ -19,7 +19,10 @@ Simple GAE site, try whatever web tech I want here!
 #### Materialize
 * `bower install --save materialize`
 
+# Packages
 
+Some packages are installed through pip under venv/python2.7/sitepackages
+see `requirements.txt` for more info
 
 
 [1]: http://bower.io/

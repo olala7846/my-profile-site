@@ -33,3 +33,11 @@ def markdown():
 def page_not_found(e):
     """Return a custom 404 error."""
     return 'Sorry, nothing at this URL.', 404
+
+
+# custom fulters
+@app.template_filter('markdown')
+def markdown_filter(text):
+    """Turns markdown text into html"""
+    html = md.markdown(text)
+    return html

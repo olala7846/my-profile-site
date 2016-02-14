@@ -62,4 +62,16 @@ index_content = {
     ]
 }
 
-RESUME_DATA = index_content
+RESUME_DATA = {
+    "summary" : """
+# Hsincheng Chao
+I'm a full-stack web developer working at [Foundi](www.foundi.info), my favourite
+programming language is Python. And I'm good at Django and Google App Engine
+
+
+Before I join Foundi, I used to work at LIVEhouse.in for 3 years as an mobile app
+developer(iOS), I spend a lot of off-duty time learning and finally become a
+fullstack web developer. I'm now learning more things like machine learning ...
+
+    """,
+}
